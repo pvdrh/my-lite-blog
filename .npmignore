@@ -1,0 +1,6 @@
+.lite-blog-cache.json
+.image-cache.json
+node_modules/
+public/
+*.log
+.DS_Store
