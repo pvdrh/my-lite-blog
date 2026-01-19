@@ -1,4 +1,4 @@
-# lite-blog
+# my-lite-blog
 
 A lightweight, fast, and secure static site generator for blogs. Zero config, just write and publish.
 
@@ -30,14 +30,14 @@ A lightweight, fast, and secure static site generator for blogs. Zero config, ju
 ### Install from npm
 
 ```bash
-npm install -g lite-blog
+npm install -g my-lite-blog
 ```
 
 ### Install from source
 
 ```bash
 # Clone the repository
-git clone https://github.com/pvdrh/my-lite-blog
+git clone https://github.com/pvdrh/my-lite-blog.git
 cd my-lite-blog
 
 # Install dependencies
@@ -172,7 +172,6 @@ draft: false
 ---
 ```
 
-
 | Field | Type | Description |
 |-------|------|-------------|
 | `title` | string | Post title (required) |
@@ -185,7 +184,7 @@ draft: false
 
 ### Markdown Features
 
-lite-blog supports GitHub Flavored Markdown:
+Supports GitHub Flavored Markdown:
 
 - **Bold** and *italic* text
 - [Links](https://example.com)
@@ -251,7 +250,7 @@ lite-blog --version
 
 ## Image Optimization
 
-Place images in `static/images/`. lite-blog automatically:
+Place images in `static/images/`. Automatically:
 
 - Creates multiple sizes (640px, 1024px, 1920px)
 - Converts to WebP format
@@ -287,7 +286,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install -g lite-blog
+      - run: npm install -g my-lite-blog
       - run: lite-blog build
       - uses: peaceiris/actions-gh-pages@v3
         with:
@@ -298,19 +297,19 @@ jobs:
 ### Netlify
 
 1. Connect your repo to Netlify
-2. Build command: `npx lite-blog build`
+2. Build command: `npx my-lite-blog build` or `lite-blog build`
 3. Publish directory: `public`
 
 ### Vercel
 
 1. Connect your repo to Vercel
-2. Build command: `npx lite-blog build`
+2. Build command: `npx my-lite-blog build` or `lite-blog build`
 3. Output directory: `public`
 
 ### Cloudflare Pages
 
 1. Connect your repo to Cloudflare Pages
-2. Build command: `npx lite-blog build`
+2. Build command: `npx my-lite-blog build` or `lite-blog build`
 3. Build output directory: `public`
 
 ## Project Structure
@@ -342,7 +341,7 @@ my-blog/
 
 ## Performance
 
-lite-blog is optimized for speed:
+Optimized for speed:
 
 - **File Caching** - Files cached in memory during development
 - **ETag Support** - Browser caching with 304 Not Modified
@@ -351,7 +350,7 @@ lite-blog is optimized for speed:
 
 ## Security
 
-lite-blog includes security best practices:
+Includes security best practices:
 
 - **XSS Protection** - All user content is HTML-escaped
 - **Path Traversal Prevention** - Strict path validation
@@ -370,6 +369,10 @@ lite-blog includes security best practices:
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
+
+GitHub: https://github.com/pvdrh/my-lite-blog
+
+npm: https://www.npmjs.com/package/my-lite-blog
 
 ---
 
